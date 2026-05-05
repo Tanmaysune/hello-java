@@ -2,8 +2,8 @@ FROM eclipse-temurin:17-jdk-alpine
 
 WORKDIR /app
 
-COPY hello.java .
+COPY Hello.java .
 
-RUN java hello.java
+RUN javac Hello.java
 
-CMD ["java", "HelloWorld"]
+CMD ["java", "Hello"]
